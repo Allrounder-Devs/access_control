@@ -25,12 +25,4 @@ const checkAccess = (userAccessList, neededAccess) => {
     }
     return hasAccess;
 };
-const accessList = [
-    { access: "frankfurt.talebes.abc" },
-];
-// checkAccess([
-//     { access: "frankfurt.talebes.create" },
-// ], accessList)
-console.log(checkAccess([
-    { access: "frankfurt.talebes.create" },
-], accessList)); // true
+exports.default = checkAccess;
